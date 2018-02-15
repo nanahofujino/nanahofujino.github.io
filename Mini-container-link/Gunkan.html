@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Oushi Handbook-Gunkan-</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
@@ -15,6 +15,7 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="shortcut icon" href="../mainpage/favicon.ico">
 	<style type="text/css">
 	* {
 		font-family: 'Roboto Mono', monospace;
@@ -40,6 +41,10 @@
 	}
 	.navbar {
 		margin: 0;
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+		border: 0;
 	}
 	.navbar .navbar-nav {
 		display: inline-block;
@@ -127,10 +132,10 @@
 		float: left;
 		text-align: left;
 	}
-	.footer-menu img {
-		width: 60px;
-		height: 60px;
-		margin-right: 30px;
+	.footer-sns img {
+		width: 20px;
+		height: 20px;
+		text-align: center;
 	}
 	.footer-container {
 		float: left;
@@ -142,12 +147,7 @@
 		width: 33%;
 		height: 100%;
 	}
-	.footer-sns img {
-		width: 50px;
-		height: 50px;
-		float: left;
-		text-align: center;
-	}
+	
 	.footer-sns li {
 		list-style-type: none;
 	}
@@ -163,48 +163,121 @@
 	.footer-comment {
 		margin-top: 30px;
 	}
+	.content1 ul {
+		padding: 0;
+		margin: 0;
+		width: auto;
+		height: auto;
+	}
+	.col-lg-6.col-md-6.col-sm-12 {
+		padding: 0;
+		margin: 0;
+	}
+	.sns-icons {
+		margin: 0;
+		text-align: center;
+	}
+	.dropup {
+		text-align: center;
+		margin: 0;
+	}
+.dropdown-menu-center {
+		left: 50%!important;
+		right: auto!important;
+		text-align: center!important;
+		transform: translate(-50%,0)!important;
+	}
+	.sns-icon {
+		text-align: center;
+	}
+	.sns-icon li {
+		height: auto;
+		width: 100%;
+		text-align: center;
+		margin: 5px;
+	}
+	.sns-icon ul {
+		padding: 0;
+		width: 100%;
+		position: relative;
+	}
+	.sns-icon a {
+		color: white;
+	}
+	.sns-icon a:hover {
+		text-decoration: none;
+		color: #777;
+	}
+	.dropup li {
+		margin: 0;
+	}
+	.footer-menu a,.footer-comment a {
+		color: white;
+	}
+	.footer-menu a:hover,.footer-comment a:hover {
+		color: #777;
+		text-decoration: none;
+	}
+	.footer-menu img {
+		width: 60px;
+		height: 60px;
+		margin-right: 30px;
+	}
+	.form-control {
+		margin: 0;
+		width: 80%;
+		display: inline;
+	}
+
 
 	</style>
 </head>
 <body>
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
+	  		
 	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header ">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#"><img src="icon.png">Handbook</a>
-	    </div>
+	    <div class="row">
+		    <div class="navbar-header col-md-3 col-sm-4">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand title" href="../mainpage/Capstone1.html"><img src="../mainpage/icon.png">Osushi Handbook</a>
+		    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Nigiri</a></li>
-	            <li><a href="#">Gunkan</a></li>
-	            <li><a href="#">Makizushi</a></li>
-	            <li><a href="#">Chirashi</a></li>
-	          </ul>
-	        </li>
-	        <li><a href="#">Contact us</a></li>
-	        <li><a href="#">Author</a></li>
-	      </ul>
-	      
-	      <ul class="nav navbar-nav navbar-right">
-	        <form class="navbar-form">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-	      </form>
-	      </ul>
+
+	    	
+		      <ul class="nav navbar-nav col-sm-4 col-md-5">
+		        <li class="active"><a href="../mainpage/Capstone1.html">Home <span class="sr-only">(current)</span></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="../Mini-container-link/nigiri.html">Nigiri</a></li>
+		            <li><a href="../Mini-container-link/Gunkan.html">Gunkan</a></li>
+		            <li><a href="../Mini-container-link/Makizushi.html">Makizushi</a></li>
+		            <li><a href="../Mini-container-link/Chirashi.html">Chirashi</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="../Contact us/contact.html">Contact us</a></li>
+		        <li><a href="../Author/Author.html">Author</a></li>
+		      </ul>
+		      
+		      <div class="nav navbar-nav navbar-right col-xs-12 col-sm-4 col-md-4">
+		       <form class="navbar-form">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search">
+		        
+		        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+		      </form>
+		      </div>
+		      </div>
+
+		</div> <!-- endrow -->
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
@@ -242,17 +315,12 @@
 		  </a>
 	</div>
 	<div class="content3">
-		<h1>What is Gunkan?</h1>
+		<h1>What is Gunkanmaki?</h1>
 		<hr>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Gunkanmaki is a sushi which looks like warship. It is made by the rice rapped by Nori and raw fish or fish egg.  </p>
 	</div>
 	<div class="content1">
-		<h1>Type of Gunkan</h1>
+		<h1>Type of Gunkanmaki</h1>
 		<hr>
 		<div class="container">
 			<div class="row">
@@ -315,34 +383,40 @@
 				<div class="footer-menu col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><img src="../mainpage/icon.png"></div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href=""><h1>Osushi Handbook</h1></a></div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Copyright <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2018 by Nanaho Fujino</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="Capstone1.html"><h1>Osushi Handbook</h1></a></div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Copyright <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2018 Nanaho Fujino. All rights reserved.</div>
 					</div>
 				</div>
 				<div class="footer-comment col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<ul>
 						<li>
-							<a href="">Home</a>
+							<a href="../mainpage/Capstone1.html">Home</a>
+						</li>
+						<li class="dropup">
+					        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+					        <ul class="dropdown-menu dropdown-menu-center">
+					            <li><a href="../Mini-container-link/nigiri.html">Nigiri</a></li>
+					            <li><a href="../Mini-container-link/Gunkan.html">Gunkan</a></li>
+					            <li><a href="../Mini-container-link/Makizushi.html">Makizushi</a></li>
+					        	<li><a href="../Mini-container-link/Chirashi.html">Chirashi</a></li>
+					        </ul>
+					    </li>
+						<li>
+							<a href="../Contact us/contact.html">Contact us</a>
 						</li>
 						<li>
-							<a href="">Category</a>
-						</li>
-						<li>
-							<a href="">Contact us</a>
-						</li>
-						<li>
-							<a href="">Author</a>
+							<a href="../Author/Author.html">Author</a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer-sns col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<h2>Our SNS</h2>
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 sns-icons">
-							<a href="https://www.facebook.com/" target="_blank"><img src="../mainpage/FB-Icon.png"></a>
-							<a href="https://twitter.com/" target="_blank"><img src="../mainpage/twittericon.png"></a>
-							<a href="https://www.instagram.com/" target="_blank"><img src="../mainpage/igicon.png"></a>
-						</div>
+					<div class="sns-icon">
+						<ul>
+							<li><a href="https://www.facebook.com/" target="_blank"><img src="../mainpage/FB-Icon.png">  Facebook</a></li>
+							<li><a href="https://twitter.com/" target="_blank"><img src="../mainpage/twittericon.png">   Twitter</a></li>
+							<li><a href="https://www.instagram.com/" target="_blank"><img src="../mainpage/igicon.png">  Instagram</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
